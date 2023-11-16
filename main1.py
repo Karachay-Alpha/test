@@ -10,8 +10,8 @@ from googletrans import Translator
 
 
 
-API_TOKEN = '6910051422:AAE3-Z0oakenhVBRHAm2m9Ty6V4PC3Shrmk'
-UNSPLASH_ACCESS_KEY = 'J1vRAClsLCyfrEsTw2lzxFbg0srwCSI80puV9U2E4sc'
+API_TOKEN = None
+UNSPLASH_ACCESS_KEY = None
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
@@ -20,7 +20,7 @@ dp.middleware.setup(LoggingMiddleware())
 
 
 
-openai.api_key = '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'
+openai.api_key = None
 
 
 info_callback = CallbackData("info", "action")
